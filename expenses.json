@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "date": "2025-11-27",
+        "description": "Lunch at KFC",
+        "amount": 25.0
+    },
+    {
+        "id": 2,
+        "date": "2025-11-27",
+        "description": "Transport",
+        "amount": 10.0,
+        "category": "Travel"
+    },
+    {
+        "id": 3,
+        "date": "2025-11-27",
+        "description": "Dinner",
+        "amount": 20.0,
+        "category": "Food"
+    }
+]
