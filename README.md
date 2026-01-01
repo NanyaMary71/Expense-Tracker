@@ -1,82 +1,113 @@
-https://roadmap.sh/projects/expense-tracker
 Expense Tracker CLI
 
-A simple and powerful Command Line Expense Tracker that helps you manage your personal finances.
-You can add, update, delete, list, and summarize expenses.
-It also supports categories, monthly budgets, and CSV export.
+A simple yet powerful command-line expense tracker designed to help you manage your personal finances efficiently.
+With this tool, you can track expenses, organize them by category, set monthly budgets, and generate summaries—all from your terminal.
 
-📁 Features
+✨ Features
 
-✔ Add expenses with description, amount, and category
-✔ Update existing expenses
-✔ Delete expenses by ID
-✔ View all expenses
-✔ Total expense summary
-✔ Monthly expense summary (current year)
-✔ Filter expenses by category
-✔ Set monthly budgets + automatic warnings
-✔ Export expenses to CSV
-✔ Data stored locally using JSON files
+
+➕ Add expenses with a description, amount, and category
+
+
+✏️ Update existing expenses
+
+
+❌ Delete expenses using a unique ID
+
+
+📄 View a list of all recorded expenses
+
+
+📊 View total expense summaries
+
+
+📅 Generate monthly expense summaries for the current year
+
+
+🏷️ Filter expenses by category
+
+
+💰 Set monthly budgets with automatic budget warnings
+
+
+📤 Export expenses to a CSV file
+
+
+💾 Store all data locally using JSON files
+
+
 
 🛠️ Tech Stack
 
+
 Python 3
 
-argparse for command-line parsing
 
-JSON for local storage
+argparse – for command-line argument parsing
 
-CSV for export
+
+JSON – for local data storage
+
+
+CSV – for exporting expense data
+
+
 
 🚀 Installation
 
+
 Clone the repository:
+
 
 git clone https://github.com/YOUR_USERNAME/expense-tracker-cli.git
 
 
-Enter the project directory:
+
+Navigate into the project directory:
+
 
 cd expense-tracker-cli
 
 
-Run the program:
+
+View available commands:
+
 
 python expense_tracker.py --help
 
+
 📌 Usage
-
-Below are all supported commands.
-
-➕ Add Expense
+Below are the supported commands and examples.
+➕ Add an Expense
 python expense_tracker.py add --description "Lunch" --amount 20 --category Food
 
-✏️ Update Expense
+✏️ Update an Expense
 python expense_tracker.py update --id 1 --description "Lunch at KFC" --amount 25
 
-❌ Delete Expense
+❌ Delete an Expense
 python expense_tracker.py delete --id 2
 
 📄 List All Expenses
 python expense_tracker.py list
 
-📊 Total Summary
+📊 Total Expense Summary
 python expense_tracker.py summary
 
-📅 Monthly Summary
+📅 Monthly Expense Summary
 python expense_tracker.py summary --month 11
 
-🏷️ Filter by Category
+🏷️ Filter Expenses by Category
 python expense_tracker.py filter-category --category Food
 
-💰 Set Monthly Budget
+💰 Set a Monthly Budget
 python expense_tracker.py set-budget --month 11 --amount 100
 
 
-Budget warnings will automatically appear when adding expenses.
+⚠️ Budget warnings will automatically appear when new expenses exceed the set monthly budget.
 
 📤 Export Expenses to CSV
 python expense_tracker.py export --file expenses.csv
+
 
 📦 Project Structure
 expense-tracker-cli/
@@ -85,10 +116,9 @@ expense-tracker-cli/
 │── budgets.json
 │── README.md
 
+
 📝 Data Storage
-
-Expenses are stored in expenses.json like:
-
+Expenses (expenses.json)
 {
   "id": 1,
   "date": "2024-11-26",
@@ -97,24 +127,26 @@ Expenses are stored in expenses.json like:
   "category": "Food"
 }
 
-
-Budgets are stored in budgets.json like:
-
+Budgets (budgets.json)
 {
   "11": 100
 }
 
+
 🤝 Contributing
+Contributions are welcome! You can help by:
 
-Contributions are welcome!
-You can:
 
-Open issues
+Opening issues
 
-Suggest new features
 
-Submit pull requests
+Suggesting new features
+
+
+Submitting pull requests
+
+
 
 ⭐ Support
-
-If you found this helpful, please star the repo ⭐ on GitHub to support the project!
+If you find this project useful, please consider giving it a ⭐ on GitHub.
+Your support helps keep the project growing!
